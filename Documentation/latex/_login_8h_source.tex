@@ -1,0 +1,38 @@
+\doxysection{Login.\+h}
+\hypertarget{_login_8h_source}{}\label{_login_8h_source}\mbox{\hyperlink{_login_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Alexandr\ on\ 21.05.2023.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ UNTITLED\_LOGIN\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ UNTITLED\_LOGIN\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <fstream>}\ \textcolor{comment}{//\ Include\ the\ <fstream>\ header\ for\ std::ifstream}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_login}{Login}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ std::fstream\ file;}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ std::string\ getTimestampOfCurrentMoment();}
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ password;}
+\DoxyCodeLine{00016\ \ \ \ \ std::string\ path;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<std::filesystem::path>\ getTxtFilesInCurrentDirectory();}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<std::filesystem::path>\ getTxtFilesInDirectory(\textcolor{keyword}{const}\ std::string\&\ directoryPath);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ std::fstream\ getCustomFile(\textcolor{keyword}{const}\ std::string\&\ filePath);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ checkFirstLine(\textcolor{keyword}{const}\ std::string\&\ filePath);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ enterTheFile(\textcolor{keyword}{const}\ std::string\&\ filePath);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ checkThePassword(\textcolor{keyword}{const}\ std::string\&\ filePath,\ \textcolor{keyword}{const}\ std::string\&\ inputString);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ changeTheTimeStamp(\textcolor{keyword}{const}\ std::string\&\ filePath);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ listAndSelectFiles(\textcolor{keyword}{const}\ std::vector<std::filesystem::path>\&\ files);}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ clearTerminal();}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_login_a4847f3e07e43b540d3339392346f87ff}{Login}}();}
+\DoxyCodeLine{00028\ \ \ \ \ std::string\ \mbox{\hyperlink{class_login_ad4582fd2e299ddc3d63147a1ac09d266}{getPath}}();}
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ \mbox{\hyperlink{class_login_ae43dccb3ae8f4252675fc837a279852e}{getPassword}}();}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//UNTITLED\_LOGIN\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,47 @@
+\doxysection{Editing.\+h}
+\hypertarget{_editing_8h_source}{}\label{_editing_8h_source}\mbox{\hyperlink{_editing_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Alexandr\ on\ 27.05.2023.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ UNTITLED\_EDITING\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ UNTITLED\_EDITING\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_editing}{Editing}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ std::fstream\ file;}
+\DoxyCodeLine{00014\ \ \ \ \ std::string\ password;}
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ filePath;}
+\DoxyCodeLine{00016\ \ \ \ \ std::string\ encodeString(\textcolor{keyword}{const}\ std::string\&\ source,\ \textcolor{keyword}{const}\ std::string\&\ key);}
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ decodeString(\textcolor{keyword}{const}\ std::string\&\ source,\ \textcolor{keyword}{const}\ std::string\&\ key);}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ addCategory(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ removeCategory(\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ containsSubstring(\textcolor{keyword}{const}\ std::string\&\ target,\ \textcolor{keyword}{const}\ std::string\&\ search);}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ clearTerminal();}
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ getLineNumber(\textcolor{keywordtype}{int}\ lineNumber);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ changeLineNumber(\textcolor{keywordtype}{int}\ lineNumber,\textcolor{keyword}{const}\ std::string\&\ name);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ addPassword();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ editPassword();}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ removePassword();}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ removeEmptyLines();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ removeIfContains(std::string\ \&\ std);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ getFirstEmptyLine(\textcolor{keyword}{const}\ std::string\&\ filePath);}
+\DoxyCodeLine{00030\ \ \ \ \ std::vector<std::string>\ getRecords(\textcolor{keywordtype}{int}\ option);}
+\DoxyCodeLine{00031\ \ \ \ \ std::vector<std::string>\ getCategories(\textcolor{keyword}{const}\ std::string\&\ \textcolor{keywordtype}{string},\ \textcolor{keywordtype}{int}\ flag);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ listRecors();}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ findAndRemove(std::vector<std::string>\ vec);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ sortPassword();}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ searchPasswords();}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ containsTarget(\textcolor{keyword}{const}\ std::string\&\ target,\ \textcolor{keyword}{const}\ std::string\&\ search);}
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_editing}{Editing}}(\textcolor{keyword}{const}\ std::string\&\ pathToFile,\ \textcolor{keyword}{const}\ std::string\&\ pass);}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//UNTITLED\_EDITING\_H}}
+
+\end{DoxyCode}
